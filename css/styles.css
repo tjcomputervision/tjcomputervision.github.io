@@ -1,18 +1,11 @@
-h1 {
-   margin: 0px;
-}
-
 body {
-   font-family: Helvetica;
+   font-family: Arial;
    font-size: 12px;
    margin: 0px;
 }
 
-.header {
-   background-color: #c60006;
-   font-size: 28px;
-   height: 300px;
-   text-align: center;
+h1 {
+   margin: 0px;
 }
 
 .button {
@@ -23,6 +16,29 @@ body {
    padding: 12px 32px;
    opacity: 0.8;
    text-align: center;
-   text-decoration: none;
    font-size: 18px;
+}
+
+.tabcontent {
+   padding: 100px 20px;
+   height: 100%;
+}
+
+.header {
+   background-color: #0A2E5E;
+   font-size: 25px;
+   height: 275px;
+   text-align: center;
+}
+
+.tablink {
+   background-color: #0A2E5E;
+   border: none;
+   color: white;
+   cursor: pointer;
+   float: left;
+   margin: 0px;
+   padding: 14px 16px;
+   font-size: 18px;
+   width: 20%;
 }
