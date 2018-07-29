@@ -1,11 +1,28 @@
+h1 {
+   margin: 0px;
+}
+
 body {
    font-family: Helvetica;
    font-size: 12px;
+   margin: 0px;
 }
 
 .header {
    background-color: #c60006;
+   font-size: 28px;
    height: 300px;
    text-align: center;
-   font-size: 40px;
+}
+
+.button {
+   border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+   color: white;
+   padding: 12px 32px;
+   opacity: 0.8;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
 }
