@@ -1,4 +1,10 @@
-.content {
-   text-align: center;
+body {
+   color: white;
+   font-family: Helvetica;
+   font-size: 12px;
+}
+
+.header {
+   background-color: #c60006;
    font-size: 40px;
 }
