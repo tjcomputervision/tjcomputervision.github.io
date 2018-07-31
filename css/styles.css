@@ -1,7 +1,3 @@
-.Select-control {
-   box-shadow: none !important;
-}
-
 body {
    font-family: Arial;
    margin: 0px;
@@ -33,6 +29,10 @@ body {
 
 .tablink:hover {
    color: #d3d2d2!important;
+}
+
+.tablink:focus {
+   outline:0;
 }
 
 .header {
