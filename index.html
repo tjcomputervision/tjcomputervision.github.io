@@ -9,34 +9,29 @@
 
    <body>
       <div id="pageheader" class="header">
-         <h1 style="color: #fff; padding: 60px"> TJ Computer Vision Club </h1>
+         <h1 style="color: #fff; padding: 60px; margin: 0px"> TJ Computer Vision Club </h1>
          <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link">Join Us!</a>
       </div>
       <div id="menu">
-         <button id="defaultOpen" class="tablink" onclick="openPage('Home', this)">Home</button>
-         <button class="tablink" onclick="openPage('News', this)">News</button>
-         <button class="tablink" onclick="openPage('Contact', this)">Contact</button>
-         <button class="tablink" onclick="openPage('About', this)">About</button>
-         <button class="tablink" onclick="openPage('Rankings', this)">Rankings</button>
+         <button id="defaultOpen" class="tablink" onclick="openPage('home', this)"> Home </button>
+         <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
+         <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
+         <button class="tablink" onclick="openPage('competitions', this)"> Competitions </button>
+         <button class="tablink" onclick="openPage('rankings', this)">Rankings</button>
       </div>
-      <div id="Home" class="content">
-         <h3>Home</h3>
+      <div id="home" class="content">
          <p>Home is where the heart is..</p>
       </div>
-      <div id="News" class="content">
-         <h3>News</h3>
+      <div id="lectures" class="content">
          <p>Some news this fine day!</p>
       </div>
-      <div id="Contact" class="content">
-         <h3>Contact</h3>
+      <div id="resources" class="content">
          <p>Get in touch, or swing by for a cup of coffee.</p>
       </div>
-      <div id="About" class="content">
-         <h3>About</h3>
+      <div id="competitions" class="content">
          <p>Who we are and what we do.</p>
       </div>
-      <div id="Rankings" class="content">
-         <h3>About</h3>
+      <div id="rankings" class="content">
          <p>Who we are and what we do.</p>
       </div>
       <script> document.getElementById("defaultOpen").click(); </script>
