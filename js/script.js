@@ -7,6 +7,6 @@ function openPage(pageName, elmnt) {
     document.getElementById(pageName).style.display = "block";
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++)
-        tablinks[i].style.color = "#9A9A9A";
+        tablinks[i].style.color = "#9a9a9a";
     elmnt.style.color = "white";
 }

@@ -4,7 +4,6 @@
 
 body {
    font-family: Arial;
-   font-size: 12px;
    margin: 0px;
 }
 
@@ -16,34 +15,39 @@ body {
    padding: 12px 32px;
    opacity: 0.8;
    text-align: center;
+   text-decoration: none;
    font-size: 18px;
+}
+
+.tablink {
+   background-color: rgba(0, 0, 0, 0.0);
+   border: none;
+   color: #9a9a9a;
+   cursor: pointer;
+   float: right;
+   font-size: 16px;
+   margin: 0px;
+   padding: 20px 20px;
+   width: 10%;
+}
+
+.tablink:hover {
+   color: #d3d2d2!important;
+}
+
+.header {
+   background-color: #0a2e5e;
+   font-size: 28px;
+   height: 400px;
+   text-align: center;
 }
 
 .content {
    display: none;
    padding: 100px 20px;
    height: 100%;
-}
-
-.header {
-   background-color: #0A2E5E;
-   font-size: 25px;
-   height: 275px;
-   text-align: center;
-}
-
-.tablink {
-   background-color: #0A2E5E;
-   border: none;
-   color: #9A9A9A;
-   cursor: pointer;
-   float: left;
-   margin: 0px;
-   padding: 14px 16px;
-   font-size: 20px;
-   width: 20%;
-}
-
-.tablink:hover {
-   color: #D3D2D2!important;
+   margin-left: 200px;
+   margin-top: -25px;
+   text-align: justify;
+   text-size: 18px;
 }

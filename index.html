@@ -8,16 +8,14 @@
    </head>
 
    <body>
-      <div id="pageheader" class="header">
-         <h1 style="color: #fff; padding: 60px; margin: 0px"> TJ Computer Vision Club </h1>
-         <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link">Join Us!</a>
-      </div>
-      <div id="menu">
-         <button id="defaultOpen" class="tablink" onclick="openPage('home', this)"> Home </button>
-         <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
+      <div id="intro" class="header">
          <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
-         <button class="tablink" onclick="openPage('competitions', this)"> Competitions </button>
-         <button class="tablink" onclick="openPage('rankings', this)">Rankings</button>
+         <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button>
+         <button class="tablink" onclick="openPage('contests', this)"> Contests </button>
+         <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
+         <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
+         <h1 style="color: #fff; padding-top: 125px;padding-bottom: 60px; margin: 0px"> TJ Computer Vision Club </h1>
+         <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link"> Join Us! </a>
       </div>
       <div id="home" class="content">
          <p>Home is where the heart is..</p>
@@ -28,13 +26,13 @@
       <div id="resources" class="content">
          <p>Get in touch, or swing by for a cup of coffee.</p>
       </div>
-      <div id="competitions" class="content">
+      <div id="contests" class="content">
          <p>Who we are and what we do.</p>
       </div>
       <div id="rankings" class="content">
          <p>Who we are and what we do.</p>
       </div>
-      <script> document.getElementById("defaultOpen").click(); </script>
+      <script> document.getElementById("default").click(); </script>
    </body>
 
 </html>
