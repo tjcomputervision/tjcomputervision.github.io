@@ -14,23 +14,81 @@
          <button class="tablink" onclick="openPage('contests', this)"> Contests </button>
          <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
          <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
-         <h1 style="color: #fff; padding-top: 125px;padding-bottom: 60px; margin: 0px"> TJ Computer Vision Club </h1>
+         <h1 style="color: #fff; padding-top: 125px; padding-bottom: 60px; margin: 0px"> TJ Computer Vision Club </h1>
          <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link"> Join Us! </a>
       </div>
       <div id="home" class="content">
-         <p>Home is where the heart is..</p>
+         <h2> Welcome to TJHSST Computer Vision Club! </h2>
+         <p> Computer Vision Club meets every Wednesday B block. We focus on the theory of human and computer vision
+            and its applications. Our goal is to create a fun, engaging environment where all members can acquire the
+            necessary skills and experience to use CV for their projects and research.
+         </p>
+         <h2> Why Computer Vision? </h2>
+         <p> The purpose of computer vision is to extract information from real-world content and use it to solve
+            real-world problems-- for instance, image reconstruction, anomaly detection, and autonomous driving. In
+            the past few years, CV's popularity and potential began to spike as computational platforms became more
+            powerful and new ideas were developed. TJ Computer Vision Club seeks to teach members the needed knowledge to
+            so they can join this hype.
+         </p>
+         <h2> Our Plan </h2>
+         <p> In the fall, we will mainly focus on human and computer vision theory, such as the camera model, feature
+             extraction, and motion. In the spring, we will explore broader, more complex topics such as object detection
+             and AI-based image processing.
+          </p>
+         <p> We will ensure that all lecture content can be understood without any background other than that previously
+             presented. Additionally we will host competitions on Kaggle, a data science competition site and keep track
+             of a rankings system, which will play a factor in officer determination for next year.
+         </p>
+         <p> <b>Officers:</b> <br/> <br/>
+             Captain: George Tang <br/> <br/>
+             Captain: Neal Bayya <br/> <br/>
+             Teaching Coordinator: Alexey Didenkov <br/> <br/>
+             Teaching Coordinator: Jacob Consalvi <br/> <br/>
+            <b>Sponsor:</b> Dr. Gabor <br/> <br/>
+            <b>Contact Us:</b> tjcomputervision@gmail.com
+         </p>
       </div>
       <div id="lectures" class="content">
-         <p>Some news this fine day!</p>
+         <p>Coming Soon!</p>
       </div>
       <div id="resources" class="content">
-         <p>Get in touch, or swing by for a cup of coffee.</p>
+         <h2> Programming Languages </h2>
+         <p> We use Python3. If you do not have Python3, you must install it following the instructions at
+            <a href = "https://www.python.org/downloads/"> https://www.python.org/downloads/</a>. Installing
+            Python3 also installs pip3, which you will be using to install other libraries.
+         </p>
+         <p> If you are considering extensively using OpenCV on your own, we recommend C++ as the more advanced
+             OpenCV modules are written in that.
+         </p>
+         <h2> Installing Libraries </h2>
+         <p> Numpy provides a powerful framework for vector/matrix math. It can be installed using: <br/>
+             <span style="background-color: #D3D3D3">pip3 install numpy</span> <br/>
+             OpenCV is a robust computer vision library. To install it, use: <br/>
+             <span style="background-color: #D3D3D3">pip3 install opencv-python</span> <br/>
+             OpenCV provides comprehensive installation tutorials for C++ for Linux, MacOS, and Windows at
+             <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html</a>.
+         </p>
+         <h2> Accessing TJ's Resources </h2>
+         <p> TJ's machines run on linux and have multiple cores. They can be accessed via
+             <span style="background-color: #D3D3D3">ssh username@remote.tjhsst.edu</span>. To copy a file
+             from your personal computer to a TJ computer, use <span style="background-color: #D3D3D3">scp filename username@remote.tjhsst.edu:filepath</span>.
+             To copy a folder, add the optional -r after scp. </p>
+         <p> zoidberg is the only computer at TJ with a modern GPU. To access it, first ssh into the network,
+             then <span style="background-color: #D3D3D3">ssh zoidberg</span>.
+         </p>
+         <h2> Mathematical References </h2>
+         <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
+            basics in our lectures. If you want more in-depth, rigorous apporaches, refer to
+            <a href = "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm">MIT OpenCourseWare Linear Algebra</a> for vector/matrix algebra
+            and <a href = "https://adminimages.muhandes.net/content/library/5ea1857ab02e4489bafccac32baed1d1.pdf">Calculus Early Transcendentals</a> for
+            single (chpt. 1-10) /multivariable calculus (chpt. 11-15).
+         </p>
       </div>
       <div id="contests" class="content">
-         <p>Who we are and what we do.</p>
+         <p>Coming Soon!</p>
       </div>
       <div id="rankings" class="content">
-         <p>Who we are and what we do.</p>
+         <p>Coming Soon!</p>
       </div>
       <script> document.getElementById("default").click(); </script>
    </body>
