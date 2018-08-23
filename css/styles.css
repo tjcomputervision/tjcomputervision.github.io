@@ -5,7 +5,7 @@ body {
 
 h2 {
    font-weight: normal;
-   padding-top: 20px;
+   padding-top: 30px;
    padding-bottom: 0px;
 }
 
@@ -43,6 +43,7 @@ h2 {
 
 .header {
    background-color: #0a2e5e;
+   background-image: url("../img/temp.jpg");
    font-size: 28px;
    height: 400px;
    text-align: center;
