@@ -6,7 +6,25 @@ body {
 h2 {
    font-weight: normal;
    padding-top: 30px;
-   padding-bottom: 0px;
+   padding-bottom: 10px;
+}
+
+.content {
+   display: none;
+   padding: 50px 20px;
+   height: 100%;
+   line-height: 25px;
+   margin-left: 150px;
+   margin-right: 150px;
+   font-size: 18px;
+}
+
+.header {
+   background-color: #0a2e5e;
+   background-image: url("../img/temp.jpg");
+   font-size: 28px;
+   height: 400px;
+   text-align: center;
 }
 
 .link {
@@ -41,20 +59,12 @@ h2 {
    outline:0;
 }
 
-.header {
-   background-color: #0a2e5e;
-   background-image: url("../img/temp.jpg");
-   font-size: 28px;
-   height: 400px;
-   text-align: center;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
 }
 
-.content {
-   display: none;
-   padding: 50px 20px;
-   height: 100%;
-   line-height: 25px;
-   margin-left: 150px;
-   margin-right: 150px;
-   font-size: 18px;
+th {
+   text-align: left;
 }
