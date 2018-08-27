@@ -1,3 +1,8 @@
+a {
+   color: red;
+   text-decoration: none;
+}
+
 body {
    font-family: Arial;
    margin: 0px;
@@ -20,10 +25,7 @@ h2 {
 }
 
 .header {
-   background-color: #003366;
-   background-image: url("../img/temp2.jpg");
-   background-blend-mode: color;
-   font-size: 28px;
+   background-color: #1565C0;
    height: 400px;
    text-align: center;
 }
@@ -34,6 +36,7 @@ h2 {
    border-width: 1px;
    color: white;
    padding: 12px 32px;
+   opacity: 0.8;
    text-align: center;
    text-decoration: none;
    font-size: 18px;
