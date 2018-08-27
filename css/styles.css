@@ -4,8 +4,8 @@ body {
 }
 
 h2 {
-   font-weight: normal;
-   padding-top: 30px;
+   font-weight: bold;
+   padding-top: 26px;
    padding-bottom: 10px;
 }
 
@@ -20,8 +20,9 @@ h2 {
 }
 
 .header {
-   background-color: #0a2e5e;
-   background-image: url("../img/temp.jpg");
+   background-color: #003366;
+   background-image: url("../img/temp2.jpg");
+   background-blend-mode: color;
    font-size: 28px;
    height: 400px;
    text-align: center;
@@ -47,8 +48,8 @@ h2 {
    float: right;
    font-size: 18px;
    margin: 0px;
-   padding: 25px 15px;
-   width: 9%;
+   padding: 20px 20px;
+   width: 10%;
 }
 
 .tablink:hover {
