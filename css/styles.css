@@ -30,6 +30,12 @@ h2 {
    text-align: center;
 }
 
+img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+}
+
 .link {
    border-radius: 5px;
    border-style: solid;
