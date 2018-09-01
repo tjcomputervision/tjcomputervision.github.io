@@ -9,4 +9,5 @@ function openPage(pageName, elmnt) {
     for (i = 0; i < tablinks.length; i++)
         tablinks[i].style.color = "#9a9a9a";
     elmnt.style.color = "white";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
