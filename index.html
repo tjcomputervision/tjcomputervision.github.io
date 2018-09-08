@@ -8,61 +8,61 @@
    <body>
       <div style="background-color: #000; height: 50px; width: 100%; position: fixed; margin: 0px">
          <h1 style="padding-right: 20px; margin: 0px">
-         <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
+         <button class="tablink" onclick="openPage('resources', this)"> Tutorials </button>
          <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button>
          <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
          <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
       </div>
       <div id="intro" class="header">
          <h1 style="color: #fff; font-size: 54px; padding-top: 130px; padding-bottom: 30px; margin: 0px"> TJ Computer Vision Club </h1>
-         <p style="color: #fff; font-size: 20px; font-style: italic; padding-top: 0px; padding-bottom: 55px; margin: 0px"> Vision & Graphics Made Easy </p>
-         <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link"> Join Us! </a>
+         <p style="color: #fff; font-size: 20px; font-style: italic; padding-top: 0px; padding-bottom: 65px; margin: 0px"> Vision & Graphics Made Easy </p>
+         <div>
+            <span id = "dhome" class="dot" style="background-color: #000; margin-left: 0%"></span>
+            <span id = "dlectures" class="dot" style="background-color: #000; margin-left: 2%"></span>
+            <span id = "drankings" class="dot" style="background-color: #000; margin-left: 2%"></span>
+            <span id = "dresources" class="dot" style="background-color: #000; margin-left: 2%"></span>
+         </div>
       </div>
       <div id="home" class="content">
-         <div>
-            <span class="dot" style="background-color: #1CB0F5; margin-left: 43.5%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-         </div>
          <h2> Welcome! </h2>
-         <p> Computer Vision Club meets every Wednesday B block. We focus on the theory behind human and computer vision
+         <p style="padding-bottom: 30px"> Computer Vision Club meets every Wednesday B block. We focus on the theory behind human and computer vision
             and its applications. Our goal is to create a fun, engaging environment where all members can acquire the
-            necessary skills and experience to use CV for their projects and research.
+            necessary skills and experience to use CV for their projects and research. Please sign up for our mailing list!
          </p>
-         <h2> What We Do </h2>
+         <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link" style="margin: 41.5%"> Join Us! </a>
+         <h2> Content </h2>
          <p> The purpose of computer vision is to extract information from real-world content and use it to solve
             real-world problems, for instance, image reconstruction, anomaly detection, and autonomous driving. In
             the past few years, CV's popularity and potential began to spike as computational platforms became more
             powerful and new ideas were developed. TJ Computer Vision Club seeks to teach members the needed knowledge
             so they can join this hype.
          </p>
-         <h2> Content and Competitions </h2>
          <p> In the fall, we will mainly focus on human and computer vision theory, such as the camera model, feature
              extraction, and motion. In the spring, we will explore broader, more complex topics such as object detection
              and AI-based image processing.
           </p>
-         <p> We host weekly Competitions on Kaggle to reinforce the lectures. Competitions are ranked, and rankings will
+         <h2> Contests </h2>
+         <p> We host weekly contests on Kaggle to reinforce the lectures. Contests are ranked, and rankings will
              factor into officer eligibility for next year.
          </p>
          <h3> Instructions: </h3>
             <ol>
                <li> Create a <a href="https://www.kaggle.com/"> Kaggle </a> account. </li>
-               <li> Click on the competition link, which can be found under Lectures. </li>
-               <li> Review the competition information and input/output (I/O) format. </li>
-               <li> Download any source code and sample data. </li>
+               <li> Click on the contest link, which can be found under Lectures. </li>
+               <li> Review the competition information, input/output (I/O) format, and download any source code and sample data. </li>
                <li> Implement your solution and create a submission file. </li>
                <li> Submit the file to recieve feedback (feedback meaning specified in competition). </li>
                <li> Tweak your solution, resubmit, and repeat to improve feedback and increase your rank on the leaderboard. </li>
             </ol>
          <h3> Rules and Guidelines: </h3>
             <ol>
-               <li> Use Python and do not use libraries (except numpy and OpenCV Input/Output) unless otherwise specified. </li>
-               <li> The competition ends at 11:59:00 PM the following Tuesday. </li>
-               <li> There is a public and private leaderboard. The public one is displayed during the competition and is determined
-                    using only 50% of the test data. When the competition is over, the hidden test data is used to determine the private
-                    leaderboard, the final standings. This is to prevent you from writing a solution that is geared towards specific data,
-                    which defeats the purpose of the competition. </li>
+               <li> Use Python. </li>
+               <li> Do not use libraries unless otherwise specified. </li>
+               <li> The competition begins the day of the lecture and ends at 11:59:00 PM the following Tuesday. </li>
+               <li> The leaderboard displayed during the competition and is determined uses only 50% of the test data.
+                    When the competition is over, the hidden test data is used to determine the real leaderboard. This is
+                    to prevent you from writing a solution that is geared towards specific data, which defeats the purpose
+                    of the contest. </li>
             </ol>
          <h2> Officers </h2>
              <b> Captains: </b>
@@ -96,12 +96,6 @@
          </p>
       </div>
       <div id="lectures" class="content">
-         <div>
-            <span class="dot" style="background-color: #AAA; margin-left: 43.5%"></span>
-            <span class="dot" style="background-color: #1CB0F5; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-         </div>
          <h2> 2018-2019 Schedule </h2>
          <table style="width:100%">
             <col style="width:15%">
@@ -110,32 +104,32 @@
             <tr>
                <th style="text-align: center"> Date </th>
                <th style="text-align: center"> Lecture </th>
-               <th style="text-align: center"> Materials </th>
+               <th style="text-align: center"> Contests </th>
             </tr>
             <div id="intro">
                <tr> <th colspan="3" style="text-align: center"> Introduction </th> </tr>
                <tr>
                   <td>9/12/18</td>
-                  <td>Orientation</td>
-                  <td><a href="lectures/Orientation.pdf" target="_blank">PDF</a></td>
+                  <td><a href="lectures/Orientation.pdf" target="_blank">Orientation</a></td>
+                  <td></td>
                </tr>
             </div>
             <div id="basics">
                <tr> <th colspan="3" style="text-align: center"> The Basics </th> </tr>
                <tr>
                   <td>9/26/18</td>
-                  <td>The Camera Model</td>
-                  <td><a href="lectures/The_Camera_Model.pdf" target="_blank">PDF</a></td>
+                  <td><a href="lectures/The_Camera_Model.pdf" target="_blank">The Camera Model</a></td>
+                  <td></td>
                </tr>
                <tr>
                   <td>10/3/18</td>
                   <td>Transformations</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>10/17/18</td>
                   <td>Intro to OpenCV</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="imgprocess">
@@ -143,17 +137,17 @@
                <tr>
                   <td>10/24/18</td>
                   <td>Edge Detection</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>10/31/18</td>
                   <td>Image Segmentation</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Image Pyramids and Quad Trees</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="visrecog">
@@ -161,27 +155,27 @@
                <tr>
                   <td>-</td>
                   <td>Hough Transform</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Linear Classification Models</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Deep Learning</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Convolutional Neural Nets 1</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Convolutional Neural Nets 2</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="motion&stero">
@@ -189,22 +183,22 @@
                <tr>
                   <td>-</td>
                   <td>Optical Flow</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Range Imaging</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Structure From Motion</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>3D Reconstruction</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="comphoto">
@@ -212,27 +206,27 @@
                <tr>
                   <td>-</td>
                   <td>Denoising</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Superresolution</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Defocus Deblurring</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Dehazing</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Image Stitching</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="graphics">
@@ -240,17 +234,17 @@
                <tr>
                   <td>-</td>
                   <td>Rasterization & Raytracing</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Global Illumination & Texture Mapping</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Acceleration Structures</td>
-                  <td>PDF</td>
+                  <td></td>
                </tr>
             </div>
             <div id="recent">
@@ -262,22 +256,10 @@
          </table>
       </div>
       <div id="rankings" class="content">
-         <div>
-            <span class="dot" style="background-color: #AAA; margin-left: 43.5%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #1CB0F5; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-         </div>
          <p>Coming Soon!</p>
       </div>
       <div id="resources" class="content">
-         <div>
-            <span class="dot" style="background-color: #AAA; margin-left: 43.5%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #AAA; margin-left: 2%"></span>
-            <span class="dot" style="background-color: #1CB0F5; margin-left: 2%"></span>
-         </div>
-         <h2> Programming Languages </h2>
+         <h2> Languages and Libraries</h2>
          <p> We use Python3. If you do not have Python3, you must install it following the instructions at
             <a href = "https://www.python.org/downloads/"> https://www.python.org/downloads/</a>. Installing
             Python3 also installs pip3, which you will be using to install other libraries.
@@ -285,21 +267,21 @@
          <p> If you are considering extensively using OpenCV on your own, we recommend C++ as the more advanced
              OpenCV modules are written in that.
          </p>
-         <h2> Installing Libraries </h2>
          <p> Numpy provides a powerful framework for vector/matrix math. It can be installed using: <br/>
-             <span style="background-color: #D3D3D3">pip3 install numpy</span> <br/>
+             <span style="background-color: #D3D3D3">pip3 install numpy</span> <br/> <br/>
              OpenCV is a robust computer vision library. To install it, use: <br/>
-             <span style="background-color: #D3D3D3">pip3 install opencv-python</span> <br/>
+             <span style="background-color: #D3D3D3">pip3 install opencv-python</span> <br/> <br/>
              OpenCV provides comprehensive installation tutorials for C++ for Linux, MacOS, and Windows at
              <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html</a>.
+             We recommend Linux and MacOS as they share the same terminal.
          </p>
-         <h2> Accessing TJ's Resources </h2>
+         <h2> TJ's Resources </h2>
          <p> TJ's machines run on linux and have multiple cores. They can be accessed via
-             <span style="background-color: #D3D3D3">ssh username@remote.tjhsst.edu</span>. To copy a file
-             from your personal computer to a TJ computer, use <span style="background-color: #D3D3D3">scp filename username@remote.tjhsst.edu:filepath</span>.
-             To copy a folder, add the optional -r after scp. </p>
-         <p> zoidberg is the only computer at TJ with a modern GPU. To access it, first ssh into the network,
-             then <span style="background-color: #D3D3D3">ssh zoidberg</span>.
+             <br/>
+             <span style="background-color: #D3D3D3">ssh username@remote.tjhsst.edu</span>.
+             <br/> <br/> To copy a file from your personal computer to a TJ computer, use <br/>
+             <span style="background-color: #D3D3D3">scp filename username@remote.tjhsst.edu:filepath</span>.
+             <br/> <br/> To copy a folder, add the optional -r after scp. </p>
          </p>
          <h2> Mathematical References </h2>
          <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
