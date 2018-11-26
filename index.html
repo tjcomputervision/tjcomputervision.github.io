@@ -59,7 +59,7 @@
                <li> Use Python. </li>
                <li> Do not use libraries unless otherwise specified. </li>
                <li> The competition begins the day of the lecture and ends at 11:59:00 PM the following Tuesday. </li>
-               <li> The leaderboard displayed during the competition and is determined uses only 50% of the test data.
+               <li> The leaderboard displayed during the competition and is determined uses only a certain percentage of the test data.
                     When the competition is over, the hidden test data is used to determine the real leaderboard. This is
                     to prevent you from writing a solution that is geared towards specific data, which defeats the purpose
                     of the contest. </li>
@@ -80,7 +80,7 @@
          </p>
       </div>
       <div id="lectures" class="content">
-         <h2> 2018-2019 Schedule </h2>
+         <h2> Selected Topics 2018-2019</h2>
          <p> Lectures and contest links are updated throughout the year. Some contests also require additional materials
              (shell code, text files, explanations), which are also attached. </p> </br>
          <table style="width:100%">
@@ -131,7 +131,7 @@
                   <td></td>
                </tr>
                <tr>
-                  <td>-</td>
+                  <td>11/14/18</td>
                   <td><a href="lectures/Image_Pyramids_and_Quad_Trees.pdf" target="_blank">Image Pyramids and Quad Trees</a></td>
                   <td></td>
                </tr>
@@ -139,27 +139,27 @@
             <div id="visrecog">
                <tr> <th colspan="3" style="text-align: center"> Visual Recognition </th> </tr>
                <tr>
-                  <td>-</td>
+                  <td>11/28/18</td>
                   <td>Hough Transform</td>
                   <td></td>
                </tr>
                <tr>
-                  <td>-</td>
+                  <td>12/5/18</td>
                   <td>Linear Classification Models</td>
                   <td></td>
                </tr>
                <tr>
-                  <td>-</td>
+                  <td>12/12/18</td>
                   <td>Deep Learning</td>
                   <td></td>
                </tr>
                <tr>
-                  <td>-</td>
+                  <td>12/19/18</td>
                   <td>Convolutional Neural Nets 1</td>
                   <td></td>
                </tr>
                <tr>
-                  <td>-</td>
+                  <td>1/9/18</td>
                   <td>Convolutional Neural Nets 2</td>
                   <td></td>
                </tr>
@@ -219,17 +219,27 @@
                <tr> <th colspan="3" style="text-align: center"> Computer Graphics </th> </tr>
                <tr>
                   <td>-</td>
-                  <td>Rasterization & Raytracing</td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>-</td>
-                  <td>Global Illumination & Texture Mapping</td>
+                  <td>Intro to Graphics</td>
                   <td></td>
                </tr>
                <tr>
                   <td>-</td>
                   <td>Acceleration Structures</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>-</td>
+                  <td>Illumindation Models</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>-</td>
+                  <td>AI-Accelerated Rendering</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>-</td>
+                  <td>GPU Raytracing</td>
                   <td></td>
                </tr>
             </div>
@@ -242,7 +252,8 @@
          </table>
       </div>
       <div id="rankings" class="content">
-         <p>Coming Soon!</p>
+         <h2>Rankings 2018-2019</h2>
+         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_7-Ao9PFRdTctV16VFGKTuzoispQKyTKwCBCfx01dsP8BfnnUEbo8r1nDpOI-x9J01TtPnfPJl7YA/pubhtml?widget=true&amp;headers=false" width="850" height="500"></iframe>
       </div>
       <div id="resources" class="content">
          <h2> Languages and Libraries</h2>
@@ -257,7 +268,7 @@
              <span style="background-color: #D3D3D3">pip3 install opencv-python</span> <br/>
              OpenCV provides comprehensive installation tutorials using cmake for C++ for Linux, MacOS, and Windows at
              <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html</a>.
-             We recommend Linux and MacOS as they share the same terminal. <br/>
+             We recommend Linux and MacOS as they have very similiar terminal enviornments. <br/>
              <h3> Machine Learning </h3>
              We will being uing tensorflow for machine learning. To install it, use: <br/>
              <span style="background-color: #D3D3D3">pip3 install tensorflow</span> <br/>
@@ -269,7 +280,35 @@
              <span style="background-color: #D3D3D3">ssh username@remote.tjhsst.edu</span>.
              <br/> <br/> To copy a file from your personal computer to a TJ computer, use <br/>
              <span style="background-color: #D3D3D3">scp filename username@remote.tjhsst.edu:filepath</span>.
-             <br/> To copy a folder, add the optional -r after scp. </p>
+             <br/> To copy a folder, add the optional -r after scp.
+             <br/> <br/> TJ has three GPU workstations: zoidberg (Tesla K-80), beethoven (GTX-1060 Ti), and duke (dual GTX-1080 Ti).
+             Once you ssh into the TJ system, you can ssh into the respective workstations. <br/>
+             <span style="background-color: #D3D3D3">shh workstation</span>
+             <br/> <br/> If you need to access many CPU nodes, you can access TJ's computing cluster through <br/>
+             <span style="background-color: #D3D3D3">shh infosphere</span> <br/>
+             Your program must be parallized with OpenMPI and written in C or C++. Tutorial: <a href = "http://mpitutorial.com/tutorials/"> http://mpitutorial.com/tutorials/</a> <br/>
+             If you are using cmake, please add the following to CMakeLists.txt <br/>
+             <div style="font-size: 14px; line-height: 20px">
+                ... <br/>
+                find_package(MPI REQUIRED) <br/>
+                include_directories(${MPI_INCLUDE_PATH}) <br/>
+                ... <br/>
+                add_executable( project_name project_name.cpp ) <br/>
+                ... <br/>
+               target_link_libraries( main ${MPI_LIBRARIES}) <br/>
+               if(MPI_COMPILE_FLAGS) <br/>
+               &nbsp &nbsp set_target_properties( main PROPERTIES <br/>
+               &nbsp &nbsp &nbsp &nbsp COMPILE_FLAGS "${MPI_COMPILE_FLAGS}") <br/>
+               endif() <br/>
+               if(MPI_LINK_FLAGS) <br/>
+               &nbsp &nbsp set_target_properties( main PROPERTIES <br/>
+               &nbsp &nbsp &nbsp &nbsp LINK_FLAGS "${MPI_LINK_FLAGS}") <br/>
+               endif() <br/> <br/>
+            </div>
+             If you require special libraries, please consult the CSLab admins at this point. To run your program on the cluster first configure MPI <br/>
+             <span style="background-color: #D3D3D3"> module load mpi </span> <br/>
+             Then allocate a specific number of cores for your job<br/>
+             <span style="background-color: #D3D3D3"> salloc -n [number of cores] mpirun [your program] </span> <br/>
          </p>
          <h2> Mathematical References </h2>
          <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
