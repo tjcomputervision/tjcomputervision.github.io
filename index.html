@@ -3,19 +3,19 @@
    <head>
       <title> TJ Vision & Graphics Club </title>
       <link rel="stylesheet", href="css/styles.css">
+
       <script src="js/script.js"></script>
    </head>
    <body>
       <div style="background-color: #000; height: 50px; width: 100%; position: fixed; margin: 0px">
          <h1 style="padding-right: 20px; margin: 0px">
          <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
-         <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button>
+         <! -- <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button> -->
          <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
          <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
       </div>
       <div id="intro" class="header">
-         <h1 style="color: #fff; font-size: 54px; padding-top: 130px; padding-bottom: 30px; margin: 0px"> TJ Vision & Graphics Club </h1>
-         <p style="color: #fff; font-size: 20px; font-style: italic; padding-top: 0px; padding-bottom: 65px; margin: 0px"> Vision & Graphics Made Easy </p>
+         <h1 style="color: #fff; font-size: 54px; padding-top: 100px; padding-bottom: 30px; margin: 0px"> TJ Vision & Graphics Club </h1>
          <div>
             <span id = "dhome" class="dot" style="background-color: #000; margin-left: 0%"></span>
             <span id = "dlectures" class="dot" style="background-color: #000; margin-left: 2%"></span>
@@ -43,8 +43,10 @@
              and AI-based image processing.
           </p>
          <h2> Contests </h2>
-         <p> We host weekly contests on Kaggle to reinforce the lectures. Contests are ranked, and rankings will
-             factor into officer eligibility for next year.
+         <p> We host weekly contests on Kaggle to reinforce the lectures. During previous school years, the winner of each
+	 Kaggle competition would receive a candy bar -- but COVID-19 makes that a bit difficult. As such, we will track
+         contest standings throughout the year and try to arrange for a prize at the end of the year, when we're hopefully
+         back in school.
          </p>
          <h3> Instructions: </h3>
             <ol>
@@ -66,27 +68,15 @@
                     of the contest. </li>
             </ol>
          <h2> Officers </h2>
-             <b> Captain: </b> Saketh Gabbita </br> </br>
-             <b> Captain: </b> Ray Bai </br> </br>
-             <b> Teaching Coordinator: </b> Praneeth Reddygari </br> </br>
-             <b> Teaching Coordinator: </b> Luke Thistlethwaite </br> </br>
+             <b> Captain: </b> Luke Thistlethwaite </br> </br>
+             <b> Captain: </b> Yusuf Bahm </br> </br>
+             <b> Teaching Coordinator: </b> Stephen Huan </br> </br>
+             <b> Teaching Coordinator: </b> Hashir Aqeel </br> </br>
              <b> Email: </b> tjcomputervision@gmail.com
-         </p>
-         <h2> Previous Leadership </h2>
-         <strong> 2017-18 </strong> </br>
-         Neil Thistlethwaite </br>
-         George Tang </br>
-         Ajith Kemisetti </br>
-         Sylesh Suresh </br> </br>
-         <strong> 2018-19 </strong> </br>
-         George Tang </br>
-         Neal Bayya </br>
-         Alexey Didenkov </br>
-         Jacob Consalvi </br>
          </p>
       </div>
       <div id="lectures" class="content">
-         <h2> Selected topics 2018-2019</h2>
+         <h2> Selected topics 2020-21</h2>
          <p> Lectures and contest links are updated throughout the year. Some contests also require additional materials
              (shell code, text files, explanations), which are also attached. </p> </br>
          <table style="width:100%">
@@ -98,122 +88,13 @@
                <th style="text-align: center"> Lecture </th>
                <th style="text-align: center"> Contests </th>
             </tr>
-            <div id="intro">
-               <tr> <th colspan="3" style="text-align: center"> Introduction </th> </tr>
-               <tr>
-                  <td>9/12/18</td>
-                  <td><a href="lectures/Orientation.pdf" target="_blank">Orientation</a></td>
-                  <td></td>
-               </tr>
-            </div>
             <div id="basics">
-               <tr> <th colspan="3" style="text-align: center"> The Basics </th> </tr>
+               <tr> <th colspan="3" style="text-align: center"> The Basics</th> </tr>
                <tr>
-                  <td>9/26/18</td>
+                  <td>October 7th</td>
                   <td><a href="lectures/The_Camera_Model.pdf" target="_blank">The Camera Model</a></td>
                   <td></td>
                </tr>
-               <tr>
-                  <td>10/3/18</td>
-                  <td><a href="lectures/Transformations.pdf" target="_blank">Transformations</a></td>
-                  <td><a href="https://www.kaggle.com/c/transformations">Link</a></td>
-               </tr>
-               <tr>
-                  <td>10/17/18</td>
-                  <td><a href="lectures/Intro_to_OpenCV.pdf" target="_blank">Intro to OpenCV</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="imgprocess">
-               <tr> <th colspan="3" style="text-align: center"> Image Processing </th> </tr>
-               <tr>
-                  <td>10/24/18</td>
-                  <td><a href="lectures/Edge_Detection.pdf" target="_blank">Edge Detection</a></td>
-                  <td><a href="https://www.kaggle.com/c/tjcvedgedetection">Link</a></td>
-               </tr>
-               <tr>
-                  <td>10/31/18</td>
-                  <td><a href="lectures/Image_Segmentation.pdf" target="_blank">Image Segmentation</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>11/14/18</td>
-                  <td><a href="lectures/Image_Pyramids_and_Quad_Trees.pdf" target="_blank">Image Pyramids and Quad Trees</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="visrecog">
-               <tr> <th colspan="3" style="text-align: center"> Visual Recognition </th> </tr>
-               <tr>
-                  <td>11/28/18</td>
-                  <td><a href="lectures/Hough_Transform.pdf" target="_blank">Hough Transform</a></td>
-                  <td><a href="https://www.kaggle.com/c/houghtransform">Link</a></td>
-               </tr>
-               <tr>
-                  <td>12/5/18</td>
-                  <td><a href="lectures/Classification_Models.pdf" target="_blank">Classification Models</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>12/19/18</td>
-                  <td><a href="lectures/Deep_Learning.pdf" target="_blank">Deep Learning</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>1/16/18</td>
-                  <td><a href="lectures/Convolutional_Neural_Nets_1.pdf" target="_blank">Convolutional Neural Nets 1</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>2/6/19</td>
-                  <td><a href="lectures/Convolutional_Neural_Nets_2.pdf" target="_blank">Convolutional Neural Nets 2</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="motion&stero">
-               <tr> <th colspan="3" style="text-align: center"> Motion & Stereo Vision  </th> </tr>
-               <tr>
-                  <td>2/27/19</td>
-                  <td><a href="lectures/Optical_Flow.pdf" target="_blank">Optical Flow</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>3/20/19</td>
-                  <td><a href="lectures/Stereo_Imaging.pdf" target="_blank">Stereo Imaging</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="comphoto">
-               <tr> <th colspan="3" style="text-align: center"> Computational Photography </th> </tr>
-               <tr>
-                  <td>4/3/19</td>
-                  <td><a href="lectures/Image_Stitching.pdf" target="_blank">Image Stitching</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>4/24/19</td>
-                  <td><a href="lectures/Image_Matting_and_Composting.pdf" target="_blank">Image Matting and Composting</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="graphics">
-               <tr> <th colspan="3" style="text-align: center"> Computer Graphics </th> </tr>
-               <tr>
-                  <td>5/1/19</td>
-                  <td><a href="lectures/Intro_to_Computer_Graphics.pdf" target="_blank">Intro to Computer Graphics</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>5/15/19</td>
-                  <td><a href="lectures/Acceleration_Structures.pdf" target="_blank">Acceleration Structures</a></td>
-                  <td></td>
-               </tr>
-            </div>
-            <div id="recent">
-               <tr> <th colspan="3" style="text-align: center"> Recent Advances </th> </tr>
-            </div>
-            <div id="guest">
-               <tr> <th colspan="3" style="text-align: center"> Guest Lectures </th> </tr>
             </div>
          </table>
       </div>
@@ -222,60 +103,51 @@
          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_7-Ao9PFRdTctV16VFGKTuzoispQKyTKwCBCfx01dsP8BfnnUEbo8r1nDpOI-x9J01TtPnfPJl7YA/pubhtml?widget=true&amp;headers=false" width="100%" height="500"></iframe>
       </div>
       <div id="resources" class="content">
+	<h2>Quickstart: Using CSL Resources</h2>
+	<p>We are very fortunate to have access to the TJHSST Computer Systems Lab and, more specifically, computer power it possesses. For various computer science courses and personal projects, you might find a need to tap into this computing power. </p>
+	<h3>Connecting to School Computers with SSH</h3>
+	Before running anything on school computers, you need to actually connect to them. This is simple with an SSH client (such as PuTTY on Windows):</p>
+	<article class="markdown-body"><pre><code>lthistle@DESKTOP-1IOTSKU:~$ ssh 2021lthistle@remote.tjhsst.edu
+2021lthistle@remote.tjhsst.edu's password: &lt;password&gt;
+2021lthistle@ras1:~$
+</code></pre></article>
+   <h3>Connecting to the Cluster</h3>
+   <p>Once you're ssh'd into ras (which stands for remote access server), you can ssh into a workstation or the cluster. We're going to ssh into the cluster, which is called infosphere.</p>
+   <article class="markdown-body"><pre><code>2021lthistle@ras1:~$ ssh infosphere
+2021lthistle@infocube:~$
+   </code></pre></article>
+   <h3>Scheduling a Job</h3>
+   <p>To schedule jobs, the cluster uses a workload manager called Slurm. Let's assume you want to run the following Python program (assuming you have already installed PyTorch):</p>
+<article class="markdown-body"><pre><code>#hello_pytorch.py
+import torch.cuda
+import socket
+machine_name = socket.gethostname()
+print(f"Running a PyTorch program from {machine_name}! I have access to {torch.cuda.device_count()} GPUs")
+</code></pre></article>
+   <p>In our Slurm command, we're going to request two GPUs from the GPU partition. Computers on the cluster are divided into two partitions, compute and gpu. We need a GPU, so we'll be using the latter.</p>
+<article class="markdown-body"><pre><code>2021lthistle@infocube:~$ srun --partition=gpu --gres=gpu:2 python hello_pytorch.py
+Running a PyTorch program from duke! I have access to 2 GPUs
+</code></pre></article>
+   <p>As we can see, Slurm scheduled our program to run on duke, one of the computers on the cluster. We also see that it has access to 2 GPUs. For the machine learning we'll be doing, there's little
+      added benefit in using multiple GPUs. As such, don't request more than you need because it takes away from resources available to other students.
+   </p>
+   <article class="markdown-body"></article>
          <h2> Languages and Libraries</h2>
          <p> We use Python3. If you do not have Python3, you must install it following the instructions at
             <a href = "https://www.python.org/downloads/"> https://www.python.org/downloads/</a>. Installing
             Python3 also installs pip3, which you will be using to install other libraries.
          </p>
-         <p> Numpy is a python library that provides a powerful framework for vector/matrix math. It can be installed using: <br/>
-             <span style="background-color: #D3D3D3">pip3 install numpy</span> <br/>
+         <p>The list of Python libraries we'll use throughout the year includes Numpy, OpenCV, and PyTorch.</p>
              <h3> Computer Vision </h3>
              OpenCV is a robust computer vision library. To install it, use: <br/>
-             <span style="background-color: #D3D3D3">pip3 install opencv-python</span> <br/>
+             <article class="markdown-body"><pre><code>pip3 install opencv-python</code></pre></article>
              OpenCV provides comprehensive installation tutorials using cmake for C++ for Linux, MacOS, and Windows at
-             <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html</a>.
+             <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> their website</a>.
              We recommend Linux and MacOS as they have very similiar terminal enviornments. <br/>
-             <h3> Machine Learning </h3>
-             We will being uing tensorflow for machine learning. To install it, use: <br/>
-             <span style="background-color: #D3D3D3">pip3 install tensorflow</span> <br/>
-             If you prefer, keras is a good module for deep learning. To install it, use: <br/>
-             <span style="background-color: #D3D3D3">pip3 install keras</span>
-         </p>
-         <h2> TJ's Resources </h2>
-         <p> TJ's machines run on linux and have multiple cores. They can be accessed via <br/>
-             <span style="background-color: #D3D3D3">ssh username@remote.tjhsst.edu</span>.
-             <br/> <br/> To copy a file from your personal computer to a TJ computer, use <br/>
-             <span style="background-color: #D3D3D3">scp filename username@remote.tjhsst.edu:filepath</span>.
-             <br/> To copy a folder, add the optional -r after scp.
-             <br/> <br/> TJ has three GPU workstations: zoidberg (Tesla K-80), beethoven (GTX-1060 Ti), and duke (dual GTX-1080 Ti).
-             Once you ssh into the TJ system, you can ssh into the respective workstations. <br/>
-             <span style="background-color: #D3D3D3">shh workstation</span>
-             <br/> <br/> If you need to access many CPU nodes, you can access TJ's computing cluster through <br/>
-             <span style="background-color: #D3D3D3">shh infosphere</span> <br/>
-             Your program must be parallized with OpenMPI and written in C or C++. Tutorial: <a href = "http://mpitutorial.com/tutorials/"> http://mpitutorial.com/tutorials/</a> <br/>
-             If you are using cmake, please add the following to CMakeLists.txt <br/>
-             <div style="font-size: 14px; line-height: 20px">
-                ... <br/>
-                find_package(MPI REQUIRED) <br/>
-                include_directories(${MPI_INCLUDE_PATH}) <br/>
-                ... <br/>
-                add_executable( project_name project_name.cpp ) <br/>
-                ... <br/>
-               target_link_libraries( main ${MPI_LIBRARIES}) <br/>
-               if(MPI_COMPILE_FLAGS) <br/>
-               &nbsp &nbsp set_target_properties( main PROPERTIES <br/>
-               &nbsp &nbsp &nbsp &nbsp COMPILE_FLAGS "${MPI_COMPILE_FLAGS}") <br/>
-               endif() <br/>
-               if(MPI_LINK_FLAGS) <br/>
-               &nbsp &nbsp set_target_properties( main PROPERTIES <br/>
-               &nbsp &nbsp &nbsp &nbsp LINK_FLAGS "${MPI_LINK_FLAGS}") <br/>
-               endif() <br/> <br/>
-            </div>
-             If you require special libraries, please consult the CSLab admins at this point. To run your program on the cluster first configure MPI <br/>
-             <span style="background-color: #D3D3D3"> module load mpi </span> <br/>
-             Then allocate a specific number of cores for your job<br/>
-             <span style="background-color: #D3D3D3"> salloc -n [number of cores] mpirun [your program] </span> <br/>
-         </p>
+         <h3>Machine Learning</h3>
+         <p>For machine learning related tasks, such as object classification, we will mainly be using PyTorch. As of October 7th, PyTorch can be installed with:</p>
+         <article class="markdown-body"><pre><code>pip3 install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html</code></pre></article>
+         <p>However, to install a different version of PyTorch or use a different environment, see <a href="https://pytorch.org/">the PyTorch website</a>.</p>
          <h2> Mathematical References </h2>
          <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
             basics in our lectures. If you want more in-depth, rigorous apporaches, refer to
