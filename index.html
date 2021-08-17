@@ -1,269 +1,334 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title> TJ Vision & Graphics Club </title>
-      <link rel="stylesheet", href="css/styles.css">
 
-      <script src="js/script.js"></script>
-   </head>
-   <body>
-      <div style="background-color: #000; height: 50px; width: 100%; position: fixed; margin: 0px">
-         <h1 style="padding-right: 20px; margin: 0px">
-         <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
-         <!-- <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button> -->
-         <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
-         <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
-      </div>
-      <div id="intro" class="header">
-         <h1 style="color: #fff; font-size: 54px; padding-top: 100px; padding-bottom: 30px; margin: 0px"> TJ Vision & Graphics Club </h1>
-         <div>
-            <span id = "dhome" class="dot" style="background-color: #000; margin-left: 0%"></span>
-            <span id = "dlectures" class="dot" style="background-color: #000; margin-left: 2%"></span>
-            <span id = "drankings" class="dot" style="background-color: #000; margin-left: 2%"></span>
-            <span id = "dresources" class="dot" style="background-color: #000; margin-left: 2%"></span>
-         </div>
-      </div>
-      <div id="home" class="content">
-         <h2> Welcome! </h2>
-         <p style="padding-bottom: 30px"> Vision & Graphics Club meets every Wednesday B block. We focus on the theory and applications of
-            computer vision, computational photography, computer graphics, machine learning in image processing, and much more, all of which
-            are unique to only us. Please sign up for our mailing list!
-         </p>
-         <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link" style="margin-left: 41.5%"> Join Us! </a>
-         <h2> Content </h2>
-         <p> The purpose of computer vision is to extract information from real-world content and use it to solve
-            real-world problems, for instance, image reconstruction, anomaly detection, and autonomous driving. In
-            the past few years, CV's popularity and potential began to spike as computational platforms became more
-            powerful and new ideas were developed. Computer graphics is the reverse process of CV: obtain and image
-            given environmental conditions. Our goal is to create an engaging environment where all members can
-            acquire the necessary skills and experience to use CV and CG for their projects and research.
-         </p>
-         <p> In the fall, we will mainly focus on human and computer vision theory, such as the camera model, feature
-             extraction, and motion. In the spring, we will explore broader, more complex topics such as object detection
-             and AI-based image processing.
-          </p>
-         <h2> Contests </h2>
-         <p> We host weekly contests on Kaggle to reinforce the lectures. During previous school years, the winner of each
-	 Kaggle competition would receive a candy bar -- but COVID-19 makes that a bit difficult. As such, we will track
-         contest standings throughout the year and try to arrange for a prize at the end of the year, when we're hopefully
-         back in school.
-         </p>
-         <h3> Instructions: </h3>
-            <ol>
-               <li> Create a <a href="https://www.kaggle.com/"> Kaggle </a> account. </li>
-               <li> Click on the contest link, which can be found under Lectures. </li>
-               <li> Review the competition information, input/output (I/O) format, and download any source code and sample data. </li>
-               <li> Implement your solution and create a submission file. </li>
-               <li> Submit the file to recieve feedback (feedback meaning specified in competition). </li>
-               <li> Tweak your solution, resubmit, and repeat to improve feedback and increase your rank on the leaderboard. </li>
-            </ol>
-         <h3> Rules and Guidelines: </h3>
-            <ol>
-               <li> Use Python. </li>
-               <li> Do not use libraries unless otherwise specified. </li>
-               <li> The competition begins the day of the lecture and ends at 11:59:00 PM the following Tuesday. </li>
-               <li> The leaderboard displayed during the competition and is determined uses only a certain percentage of the test data.
-                    When the competition is over, the hidden test data is used to determine the real leaderboard. This is
-                    to prevent you from writing a solution that is geared towards specific data, which defeats the purpose
-                    of the contest. </li>
-            </ol>
-         <h2> Officers </h2>
-             <b> Captain: </b> Luke Thistlethwaite </br> </br>
-             <b> Captain: </b> Yusuf Bahm </br> </br>
-             <b> Teaching Coordinator: </b> Stephen Huan </br> </br>
-             <b> Teaching Coordinator: </b> Hashir Aqeel </br> </br>
-             <b> Email: </b> tjcomputervision@gmail.com
-         </p>
-      </div>
-      <div id="lectures" class="content">
-         <h2> Selected topics 2020-21</h2>
-         <p> Lectures and contest links are updated throughout the year. Some contests also require additional materials
-             (shell code, text files, explanations), which are also attached. </p> </br>
-         <table style="width:100%">
-            <col style="width:15%">
-	         <col style="width:70%">
-	         <col style="width:15%">
+<head>
+  <title> TJ Vision & Graphics Club </title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/03d79be075.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div style="background-color: #000; height: 50px; width: 100%; position: fixed; margin: 0px">
+    <h1 style="padding-right: 20px; margin: 0px" />
+      <button class="tablink" onclick="openPage('resources', this)"> Resources </button>
+      <!-- <button class="tablink" onclick="openPage('rankings', this)"> Rankings </button> -->
+      <button class="tablink" onclick="openPage('lectures', this)"> Lectures </button>
+      <button id="default" class="tablink" onclick="openPage('home', this)"> Home </button>
+  </div>
+  <div id="intro" class="header">
+    <h1 style="color: #fff; font-size: 54px; padding-top: 100px; padding-bottom: 30px; margin: 0px"> TJ Vision & Graphics Club </h1>
+    <div>
+      <span id="dhome" class="dot" style="background-color: #000; margin-left: 0%"></span>
+      <span id="dlectures" class="dot" style="background-color: #000; margin-left: 2%"></span>
+      <span id="drankings" class="dot" style="background-color: #000; margin-left: 2%"></span>
+      <span id="dresources" class="dot" style="background-color: #000; margin-left: 2%"></span>
+    </div>
+  </div>
+  <div id="home" class="content">
+    <h2> Welcome! </h2>
+    <p style="padding-bottom: 30px"> Vision & Graphics Club meets every Wednesday B block. We focus on the theory and applications of
+      computer vision, computational photography, computer graphics, machine learning in image processing, and much more, all of which
+      are unique to only us. Please sign up for our mailing list!
+    </p>
+    <a href="https://goo.gl/forms/wgjarOQmLpHcYuTr1" class="link" style="margin-left: 41.5%"> Join Us! </a>
+    <h2> Content </h2>
+    <p> The purpose of computer vision is to extract information from real-world content and use it to solve
+      real-world problems, for instance, image reconstruction, anomaly detection, and autonomous driving. In
+      the past few years, CV's popularity and potential began to spike as computational platforms became more
+      powerful and new ideas were developed. Computer graphics is the reverse process of CV: obtain and image
+      given environmental conditions. Our goal is to create an engaging environment where all members can
+      acquire the necessary skills and experience to use CV and CG for their projects and research.
+    </p>
+    <p> In the fall, we will mainly focus on human and computer vision theory, such as the camera model, feature
+      extraction, and motion. In the spring, we will explore broader, more complex topics such as object detection
+      and AI-based image processing.
+    </p>
+    <h2> Contests </h2>
+    <p> We host weekly contests on Kaggle to reinforce the lectures. During previous school years, the winner of each
+      Kaggle competition would receive a candy bar -- but COVID-19 makes that a bit difficult. As such, we will track
+      contest standings throughout the year and try to arrange for a prize at the end of the year, when we're hopefully
+      back in school.
+    </p>
+    <h3> Instructions: </h3>
+    <ol>
+      <li> Create a <a href="https://www.kaggle.com/"> Kaggle </a> account. </li>
+      <li> Click on the contest link, which can be found under Lectures. </li>
+      <li> Review the competition information, input/output (I/O) format, and download any source code and sample data. </li>
+      <li> Implement your solution and create a submission file. </li>
+      <li> Submit the file to recieve feedback (feedback meaning specified in competition). </li>
+      <li> Tweak your solution, resubmit, and repeat to improve feedback and increase your rank on the leaderboard. </li>
+    </ol>
+    <h3> Rules and Guidelines: </h3>
+    <ol>
+      <li> Use Python. </li>
+      <li> Do not use libraries unless otherwise specified. </li>
+      <li> The competition begins the day of the lecture and ends at 11:59:00 PM the following Tuesday. </li>
+      <li> The leaderboard displayed during the competition and is determined uses only a certain percentage of the test data.
+        When the competition is over, the hidden test data is used to determine the real leaderboard. This is
+        to prevent you from writing a solution that is geared towards specific data, which defeats the purpose
+        of the contest. </li>
+    </ol>
+
+    <div>
+      <h2> Officers </h2>
+      <b> Captain: </b> Sagar Gupta <br> <br>
+      <b> Captain: </b> Ron Nachum <br> <br>
+      <b> Teaching Coordinator: </b> Arya Grayeli <br> <br>
+      <b> Teaching Coordinator: </b> Vishal Kotha <br> <br>
+
+      <input id="check" type="checkbox" />
+      <label for="check">Previous Leadership</label> <i class="fas fa-caret-down rotate-180"></i>
+      <div class="fade-in prev-leaders" style="padding-top: 5px;">
+        <table style="float: left; border: 0px;">
+          <tbody>
             <tr>
-               <th style="text-align: center"> Date </th>
-               <th style="text-align: center"> Lecture </th>
-               <th style="text-align: center"> Contests </th>
+              <th>2020-2021</th>
+              <th>2019-2020</th>
+              <th>2018-2019</th>
+              <th>2017-2018</th>
             </tr>
-            <div id="basics">
-               <tr> <th colspan="3" style="text-align: center"> The Basics</th> </tr>
-               <tr>
-                  <td>October 7th</td>
-                  <td><a href="lectures/cameramodel.pptx" target="_blank">The Camera Model</a></td>
-                  <td></td>
-               </tr>
-               <tr>
-                   <td>October 14th</td>
-                   <td><a href="https://docs.google.com/presentation/d/1eM9KYgCW-7buB4xlsqe7lyTX-TvbjfVKJLFvt8XoR1Y/edit?usp=sharing" target="_blank">Transformations</a></td>
-                   <td><a href="lectures/transform_demo.ipynb" target="_blank">Jupyter Notebook Demo</a></td>
-               </tr>
-               <tr>
-                   <td>October 21th</td>
-                   <td><a href="lectures/FFT_Presentation.pdf" target="_blank">Fast Fourier Transform (FFT) and 2D Convolutions</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/FFT_Handout.pdf" target="_blank">Handout (presentation without slide animations)</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/FFT_Lecture.pdf" target="_blank">Lecture (LaTeX writeup)</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>October 28th</td>
-                   <td><a href="" target="_blank"></a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>November 4th</td>
-                   <td><a href="lectures/Tensor_Calculus.pdf" target="_blank">Linear Alebgra and Least-Squares Regression</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>November 18th</td>
-                   <td><a href="https://colab.research.google.com/drive/1ZGMkfgnT3tBTp-BO6z6Xnm8wACUYvz3T" target="_blank">Raytracing</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>December 2nd</td>
-                   <td><a href="lectures/kmeans_Handout.pdf" target="_blank">k-means and kd-Trees</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/kmeans_Presentation.pdf" target="_blank">k-means and kd-Trees (presentation)</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>January 6th</td>
-                   <td><a href="" target="_blank"></a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>January 21st</td>
-                   <td><a href="https://docs.google.com/presentation/d/1U8PiAoVIe2rvfzQ_q9tECdlYfy-mHq6HnJUC45Wy9Y4/edit?usp=sharing" target="_blank">Accelerating Exact k-means Algorithms with Geometric Reasoning</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/Accelerating_kmeans.odp" target="_blank">Presentation</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>January 27th</td>
-                   <td><a href="https://docs.google.com/presentation/d/1XlxeFMDeSFhnE3O-h7EvX-LEPMq4O18Dc1llNjYITZI/edit?usp=sharing" target="_blank">Color Theory, Part 1: Color Difference Metrics</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/Color_difference.odp" target="_blank">Presentation</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>Febuary 3rd</td>
-                   <td><a href="https://docs.google.com/presentation/d/1KGOiKWH8d5PEPVF3700smOwqc6q4iCkpAeJycYwdl8E/edit?usp=sharing" target="_blank">Color Theory, Part 2: Uniform Color Spaces</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/Color_space.odp" target="_blank">Presentation</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>Febuary 24th</td>
-                   <td><a href="https://docs.google.com/document/d/1-Oebp9N6nsm7WJAk2BUsNz4ViqGWQFOdgw9ybkkheuE/edit" target="_blank">Mathematics of the Convolution</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>April 7th</td>
-                   <td><a href="https://docs.google.com/presentation/d/1EFF4F3YNGUqq2cQJTrFpGcHYwhbOx5eSuyDipOTVvaY/edit?usp=sharing" target="_blank">Human Movement Analysis with CV (Guest lecture by Ron Nachum)</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="https://youtu.be/-1gztFHqdXw" target="_blank">Video recording</a></td>
-                   <td></td>
-               </tr> 
-               <tr>
-                   <td>April 14th</td>
-                   <td><a href="lectures/Otsu_Handout.pdf" target="_blank">Otsu's Binarization</a></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td><a href="lectures/Otsu_Presentation.pdf" target="_blank">Presentation</a></td>
-                   <td></td>
-               </tr> 
-            </div>
-         </table>
+            <tr>
+              <td>Luke Thistlethwaite</td>
+              <td>Saketh Gabbita</td>
+              <td>George Tang</td>
+              <td>Neil Thistlethwaite</td>
+            </tr>
+            <tr>
+              <td>Yusuf Bahm</td>
+              <td>Ray Bai</td>
+              <td>Neal Bayya</td>
+              <td>George Tang</td>
+            </tr>
+            <tr>
+              <td>Stephen Huan</td>
+              <td>Praneeth Reddygari</td>
+              <td>Alexey Didenkov</td>
+              <td>Ajith Kemisetti</td>
+            </tr>
+            <tr>
+              <td>Hashir Aqeel</td>
+              <td>Luke Thistlethwaite</td>
+              <td>Jacob Consalvi</td>
+              <td>Sylesh Suresh</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div id="rankings" class="content">
-         <h2>Rankings 2018-2019</h2>
-         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_7-Ao9PFRdTctV16VFGKTuzoispQKyTKwCBCfx01dsP8BfnnUEbo8r1nDpOI-x9J01TtPnfPJl7YA/pubhtml?widget=true&amp;headers=false" width="100%" height="500"></iframe>
+    </div>
+    <p/>
+  </div>
+
+  <div id="lectures" class="content">
+    <h2> Selected topics 2020-21</h2>
+    <p> Lectures and contest links are updated throughout the year. Some contests also require additional materials
+      (shell code, text files, explanations), which are also attached. </p> <br>
+    <table style="width:100%">
+      <col style="width:15%">
+      <col style="width:70%">
+      <col style="width:15%">
+      <tr>
+        <th style="text-align: center"> Date </th>
+        <th style="text-align: center"> Lecture </th>
+        <th style="text-align: center"> Contests </th>
+      </tr>
+      <div id="basics">
+        <tr>
+          <th colspan="3" style="text-align: center"> The Basics</th>
+        </tr>
+        <tr>
+          <td>October 7th</td>
+          <td><a href="lectures/cameramodel.pptx" target="_blank">The Camera Model</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>October 14th</td>
+          <td><a href="https://docs.google.com/presentation/d/1eM9KYgCW-7buB4xlsqe7lyTX-TvbjfVKJLFvt8XoR1Y/edit?usp=sharing" target="_blank">Transformations</a></td>
+          <td><a href="lectures/transform_demo.ipynb" target="_blank">Jupyter Notebook Demo</a></td>
+        </tr>
+        <tr>
+          <td>October 21th</td>
+          <td><a href="lectures/FFT_Presentation.pdf" target="_blank">Fast Fourier Transform (FFT) and 2D Convolutions</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/FFT_Handout.pdf" target="_blank">Handout (presentation without slide animations)</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/FFT_Lecture.pdf" target="_blank">Lecture (LaTeX writeup)</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>October 28th</td>
+          <td><a href="" target="_blank"></a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>November 4th</td>
+          <td><a href="lectures/Tensor_Calculus.pdf" target="_blank">Linear Alebgra and Least-Squares Regression</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>November 18th</td>
+          <td><a href="https://colab.research.google.com/drive/1ZGMkfgnT3tBTp-BO6z6Xnm8wACUYvz3T" target="_blank">Raytracing</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>December 2nd</td>
+          <td><a href="lectures/kmeans_Handout.pdf" target="_blank">k-means and kd-Trees</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/kmeans_Presentation.pdf" target="_blank">k-means and kd-Trees (presentation)</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>January 6th</td>
+          <td><a href="" target="_blank"></a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>January 21st</td>
+          <td><a href="https://docs.google.com/presentation/d/1U8PiAoVIe2rvfzQ_q9tECdlYfy-mHq6HnJUC45Wy9Y4/edit?usp=sharing" target="_blank">Accelerating Exact k-means Algorithms with Geometric Reasoning</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/Accelerating_kmeans.odp" target="_blank">Presentation</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>January 27th</td>
+          <td><a href="https://docs.google.com/presentation/d/1XlxeFMDeSFhnE3O-h7EvX-LEPMq4O18Dc1llNjYITZI/edit?usp=sharing" target="_blank">Color Theory, Part 1: Color Difference Metrics</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/Color_difference.odp" target="_blank">Presentation</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Febuary 3rd</td>
+          <td><a href="https://docs.google.com/presentation/d/1KGOiKWH8d5PEPVF3700smOwqc6q4iCkpAeJycYwdl8E/edit?usp=sharing" target="_blank">Color Theory, Part 2: Uniform Color Spaces</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/Color_space.odp" target="_blank">Presentation</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Febuary 24th</td>
+          <td><a href="https://docs.google.com/document/d/1-Oebp9N6nsm7WJAk2BUsNz4ViqGWQFOdgw9ybkkheuE/edit" target="_blank">Mathematics of the Convolution</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>April 7th</td>
+          <td><a href="https://docs.google.com/presentation/d/1EFF4F3YNGUqq2cQJTrFpGcHYwhbOx5eSuyDipOTVvaY/edit?usp=sharing" target="_blank">Human Movement Analysis with CV (Guest lecture by Ron Nachum)</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="https://youtu.be/-1gztFHqdXw" target="_blank">Video recording</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>April 14th</td>
+          <td><a href="lectures/Otsu_Handout.pdf" target="_blank">Otsu's Binarization</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="lectures/Otsu_Presentation.pdf" target="_blank">Presentation</a></td>
+          <td></td>
+        </tr>
       </div>
-      <div id="resources" class="content">
-	<h2>Quickstart: Using CSL Resources</h2>
-	<p>We are very fortunate to have access to the TJHSST Computer Systems Lab and, more specifically, computer power it possesses. For various computer science courses and personal projects, you might find a need to tap into this computing power. </p>
-	<h3>Connecting to School Computers with SSH</h3>
-	Before running anything on school computers, you need to actually connect to them. This is simple with an SSH client (such as PuTTY on Windows):</p>
-	<article class="markdown-body"><pre><code>lthistle@DESKTOP-1IOTSKU:~$ ssh 2021lthistle@remote.tjhsst.edu
+    </table>
+  </div>
+  <div id="rankings" class="content">
+    <h2>Rankings 2018-2019</h2>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_7-Ao9PFRdTctV16VFGKTuzoispQKyTKwCBCfx01dsP8BfnnUEbo8r1nDpOI-x9J01TtPnfPJl7YA/pubhtml?widget=true&amp;headers=false" width="100%" height="500"></iframe>
+  </div>
+  <div id="resources" class="content">
+    <h2>Quickstart: Using CSL Resources</h2>
+    <p>We are very fortunate to have access to the TJHSST Computer Systems Lab and, more specifically, computer power it possesses. For various computer science courses and personal projects, you might find a need to tap into this computing power.
+    </p>
+    <h3>Connecting to School Computers with SSH</h3>
+    Before running anything on school computers, you need to actually connect to them. This is simple with an SSH client (such as PuTTY on Windows):<p/>
+    <article class="markdown-body">
+      <pre><code>lthistle@DESKTOP-1IOTSKU:~$ ssh 2021lthistle@remote.tjhsst.edu
 2021lthistle@remote.tjhsst.edu's password: &lt;password&gt;
 2021lthistle@ras1:~$
-</code></pre></article>
-   <h3>Connecting to the Cluster</h3>
-   <p>Once you're ssh'd into ras (which stands for remote access server), you can ssh into a workstation or the cluster. We're going to ssh into the cluster, which is called infosphere.</p>
-   <article class="markdown-body"><pre><code>2021lthistle@ras1:~$ ssh infosphere
+</code></pre>
+    </article>
+    <h3>Connecting to the Cluster</h3>
+    <p>Once you're ssh'd into ras (which stands for remote access server), you can ssh into a workstation or the cluster. We're going to ssh into the cluster, which is called infosphere.</p>
+    <article class="markdown-body">
+      <pre><code>2021lthistle@ras1:~$ ssh infosphere
 2021lthistle@infocube:~$
-   </code></pre></article>
-   <h3>Scheduling a Job</h3>
-   <p>To schedule jobs, the cluster uses a workload manager called Slurm. Let's assume you want to run the following Python program (assuming you have already installed PyTorch):</p>
-<article class="markdown-body"><pre><code>#hello_pytorch.py
+   </code></pre>
+    </article>
+    <h3>Scheduling a Job</h3>
+    <p>To schedule jobs, the cluster uses a workload manager called Slurm. Let's assume you want to run the following Python program (assuming you have already installed PyTorch):</p>
+    <article class="markdown-body">
+      <pre><code>#hello_pytorch.py
 import torch.cuda
 import socket
 machine_name = socket.gethostname()
 print(f"Running a PyTorch program from {machine_name}! I have access to {torch.cuda.device_count()} GPUs")
-</code></pre></article>
-   <p>In our Slurm command, we're going to request two GPUs from the GPU partition. Computers on the cluster are divided into two partitions, compute and gpu. We need a GPU, so we'll be using the latter.</p>
-<article class="markdown-body"><pre><code>2021lthistle@infocube:~$ srun --partition=gpu --gres=gpu:2 python hello_pytorch.py
+</code></pre>
+    </article>
+    <p>In our Slurm command, we're going to request two GPUs from the GPU partition. Computers on the cluster are divided into two partitions, compute and gpu. We need a GPU, so we'll be using the latter.</p>
+    <article class="markdown-body">
+      <pre><code>2021lthistle@infocube:~$ srun --partition=gpu --gres=gpu:2 python hello_pytorch.py
 Running a PyTorch program from duke! I have access to 2 GPUs
-</code></pre></article>
-   <p>As we can see, Slurm scheduled our program to run on duke, one of the computers on the cluster. We also see that it has access to 2 GPUs. For the machine learning we'll be doing, there's little
+</code></pre>
+    </article>
+    <p>As we can see, Slurm scheduled our program to run on duke, one of the computers on the cluster. We also see that it has access to 2 GPUs. For the machine learning we'll be doing, there's little
       added benefit in using multiple GPUs. As such, don't request more than you need because it takes away from resources available to other students.
-   </p>
-   <article class="markdown-body"></article>
-         <h2> Languages and Libraries</h2>
-         <p> We use Python3. If you do not have Python3, you must install it following the instructions at
-            <a href = "https://www.python.org/downloads/"> https://www.python.org/downloads/</a>. Installing
-            Python3 also installs pip3, which you will be using to install other libraries.
-         </p>
-         <p>The list of Python libraries we'll use throughout the year includes Numpy, OpenCV, and PyTorch.</p>
-             <h3> Computer Vision </h3>
-             OpenCV is a robust computer vision library. To install it, use: <br/>
-             <article class="markdown-body"><pre><code>pip3 install opencv-python</code></pre></article>
-             OpenCV provides comprehensive installation tutorials using cmake for C++ for Linux, MacOS, and Windows at
-             <a href = "https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> their website</a>.
-             We recommend Linux and MacOS as they have very similiar terminal enviornments. <br/>
-         <h3>Machine Learning</h3>
-         <p>For machine learning related tasks, such as object classification, we will mainly be using PyTorch. As of October 7th, PyTorch can be installed with:</p>
-         <article class="markdown-body"><pre><code>pip3 install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html</code></pre></article>
-         <p>However, to install a different version of PyTorch or use a different environment, see <a href="https://pytorch.org/">the PyTorch website</a>.</p>
-         <h2> Mathematical References </h2>
-         <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
-            basics in our lectures. If you want more in-depth, rigorous apporaches, refer to
-            <a href = "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm">MIT OpenCourseWare Linear Algebra</a> for vector/matrix algebra
-            and <a href = "https://adminimages.muhandes.net/content/library/5ea1857ab02e4489bafccac32baed1d1.pdf">Calculus Early Transcendentals</a> for
-            single (chpt. 1-10) /multivariable calculus (chpt. 11-15).
-         </p>
-      </div>
-      <div style="background-color: #AAA; height: 100px; width: 100%; margin: 0px; text-align: center; vertical-align: center; line-height:100px">
-         <a href="mailto:example@email.com" style="color: black; font-size: 18px">Contact Us</a> | <a href="https://www.facebook.com/groups/1981240932115763/" target="_blank" style="color: black; font-size: 18px">Facebook</a>
-      </div>
-      <script> document.getElementById("default").click(); </script>
-   </body>
+    </p>
+    <article class="markdown-body"></article>
+    <h2> Languages and Libraries</h2>
+    <p> We use Python3. If you do not have Python3, you must install it following the instructions at
+      <a href="https://www.python.org/downloads/"> https://www.python.org/downloads/</a>. Installing
+      Python3 also installs pip3, which you will be using to install other libraries.
+    </p>
+    <p>The list of Python libraries we'll use throughout the year includes Numpy, OpenCV, and PyTorch.</p>
+    <h3> Computer Vision </h3>
+    OpenCV is a robust computer vision library. To install it, use: <br />
+    <article class="markdown-body">
+      <pre><code>pip3 install opencv-python</code></pre>
+    </article>
+    OpenCV provides comprehensive installation tutorials using cmake for C++ for Linux, MacOS, and Windows at
+    <a href="https://docs.opencv.org/3.4.2/d6/d00/tutorial_py_root.html"> their website</a>.
+    We recommend Linux and MacOS as they have very similiar terminal enviornments. <br />
+    <h3>Machine Learning</h3>
+    <p>For machine learning related tasks, such as object classification, we will mainly be using PyTorch. As of October 7th, PyTorch can be installed with:</p>
+    <article class="markdown-body">
+      <pre><code>pip3 install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html</code></pre>
+    </article>
+    <p>However, to install a different version of PyTorch or use a different environment, see <a href="https://pytorch.org/">the PyTorch website</a>.</p>
+    <h2> Mathematical References </h2>
+    <p> Computer Vision involves vector/matrix algebra and single/multivariable calculus. We will cover the
+      basics in our lectures. If you want more in-depth, rigorous apporaches, refer to
+      <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm">MIT OpenCourseWare Linear Algebra</a> for vector/matrix algebra
+      and <a href="https://adminimages.muhandes.net/content/library/5ea1857ab02e4489bafccac32baed1d1.pdf">Calculus Early Transcendentals</a> for
+      single (chpt. 1-10) /multivariable calculus (chpt. 11-15).
+    </p>
+  </div>
+
+  <div style="background-color: #AAA; height: 100px; width: 100%; margin: 0px; text-align: center; vertical-align: center; line-height:100px">
+     <a href="mailto:example@email.com" style="color: black; font-size: 18px">Contact Us</a> | <a href="https://www.facebook.com/groups/1981240932115763/" target="_blank" style="color: black; font-size: 18px">Facebook</a>
+  </div>
+
+  <script>
+    document.getElementById("default").click();
+  </script>
+</body>
+
 </html>
