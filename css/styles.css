@@ -1,6 +1,5 @@
 a {
    color: red;
-   text-decoration: none;
 }
 
 body {
@@ -119,7 +118,7 @@ i {
   transform: rotate(0);
 }
 
-label:hover {
+label:hover, a:hover {
   text-decoration: underline;
 }
 
